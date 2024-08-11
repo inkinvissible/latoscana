@@ -1,216 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap Style Sheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="asset/css/rooms.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="asset/css/rooms-mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <title>Hotel Majesty | Rooms and Rate page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css">
+    <title>La Toscana | Nuestras Casas y Suites</title>
     <script src="https://kit.fontawesome.com/10e2f2fe75.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon-32x32.png">
 </head>
+
 <body>
     <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
-        <img src="asset/img/Vector.svg" width="127px" height="45px" alt="Hotel Majestic">
-      </a>
+        <a class="navbar-brand" href="#">
+            <img src="asset/img/logo-latoscana.png" height="125px" width="125px" alt="La Toscana">
+        </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="rooms.html">Rooms <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="facilities.html">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link smooth-scroll" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="index.html">Inicio <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="rooms.html">Casas y Suites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="facilities.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
-    
     <!-- ROOMS DESCRIPTION -->
     <section id="room-text">
         <div class="text">
-            <h1 class="title">Rooms and Rates </h1>
-            <p class="content">A hotel is an establishment that provides paid lodging on a short term basis. <br>Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality.</p>
+            <h1 class="title">Casas y Suites</h1>
+            <p class="content">Nuestras Casas y Suites tienen todo para que te sientas como en casa y disfrutes de los
+                pequeños placeres de la vida.</p>
         </div>
     </section>
 
     <section id="room-description">
-        <div class="description">
-            <img class="img1" src="asset/img2/steven-ungermann-aRT5UCf2MYY-unsplash.jpg" alt="#">
-            <p class="room-price">#20,000</p>
-            <p class="room-status">Master Longue</p>
-            <ul>
-                <li>Air conditioner</li>
-                <li>Free internent</li>
-                <li>Outdoor Funiture</li>
-                <li>Room Services</li>
-            </ul>
 
+
+
+
+        <!-- <div class="description">
+            <img class="images" src="asset/img2/ralph-kayden-FqqiAvJejto-unsplash.jpg" alt="#">
+            <p class="room-price">$150,000</p>
+            <p class="room-status">Casa de 100m2</p>
+            <ul>
+                <li>Cocina con Horno y Vajilla</li>
+                <li>WiFi y Tv Smart</li>
+                <li>Dos Dormitorios</li>
+                <li>Cochera y parrilla</li>
+            </ul>
             <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                <span>Consultar</span>
+                <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
             </a>
-            
-            
         </div>
 
 
         <div class="description">
             <img class="images" src="asset/img2/ralph-kayden-FqqiAvJejto-unsplash.jpg" alt="#">
-            <p class="room-price">#50,000</p>
-            <p class="room-status">Business Room</p>
+            <p class="room-price">$150,000</p>
+            <p class="room-status">Casa de 100m2</p>
             <ul>
-                <li>Flat screen Tv</li>
-                <li>Cleaning services</li>
-                <li>Private bathroom</li>
-                <li>Cloth rack</li>
+                <li>Cocina con Horno y Vajilla</li>
+                <li>WiFi y Tv Smart</li>
+                <li>Dos Dormitorios</li>
+                <li>Cochera y parrilla</li>
             </ul>
             <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                <span>Consultar</span>
+                <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
             </a>
         </div>
 
         <div class="description">
-           <img class="images" src="asset/img2/khadeeja-yasser-msFZE7d9KB4-unsplash.jpg" alt="#">
-            <p class="room-price">#32,000</p>
-            <p class="room-status">Master Longue</p>
+            <img class="images" src="asset/img2/khadeeja-yasser-msFZE7d9KB4-unsplash.jpg" alt="#">
+            <p class="room-price">$110,000</p>
+            <p class="room-status">Suite 3 y 4 de 65m2</p>
             <ul>
-                <li>Air conditioner</li>
-                <li>Streaming services</li>
-                <li>Outdoor Funiture</li>
-                <li>Room Services</li>
+                <li>Cocina con Horno y Vajilla</li>
+                <li>WiFi y Tv Smart</li>
+                <li>Dos Dormitorios</li>
+                <li>Aire Acondicionado Frío/Calor</li>
             </ul>
             <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                <span>Consultar</span>
+                <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
             </a>
+        </div> -->
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Primer Slider -->
+                <div class="col-md-4">
+                    <div class="glide" id="glide1">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="asset/img/suites1-afuera.jpg" alt="Suite 1"></li>
+                                <li class="glide__slide"><img src="asset/img/suites1-bano.jpg" alt="Suite 1"></li>
+                                <li class="glide__slide"><img src="asset/img/suites1-cocina.jpg" alt="Suite 1"></li>
+                                <li class="glide__slide"><img src="asset/img/suites1-comedor.jpg" alt="Suite 1"></li>
+                                <li class="glide__slide"><img src="asset/img/suites1-dormitorio.jpg" alt="Suite 1"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="description text-center mt-3">
+                        <p class="room-price">$95.000</p>
+                        <p class="room-status">Suite 1 y 2 de 45m2</p>
+                        <ul>
+                            <li>Vajilla Completa</li>
+                            <li>Microondas y pava eléctrica</li>
+                            <li>Calefacción Tiro Balanceado</li>
+                            <li>Cochera y Parrilla</li>
+                            <li>Anafe Eléctrico</li>
+                            <li>WiFi</li>
+                        </ul>
+                        <a class="btn"
+                            href="https://api.whatsapp.com/send/?phone=5493544623216&text=Buenos%20días.%20Estamos%20interesados%20en%20la%20suite%201%20o%202">
+                            <span>Consultar</span>
+                            <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Segundo Slider -->
+                <div class="col-md-4">
+                    <div class="glide" id="glide2">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="asset/img/casa-galeria.jpg" alt="Casa"></li>
+                                <li class="glide__slide"><img src="asset/img/casa-asador.jpg" alt="Casa"></li>
+                                <li class="glide__slide"><img src="asset/img/casa-bano.jpg" alt="Casa"></li>
+                                <li class="glide__slide"><img src="asset/img/casa-cocina.jpg" alt="Casa"></li>
+
+                                <li class="glide__slide"><img src="asset/img/casa-habitacion-chica.jpg" alt="Casa"></li>
+                                <li class="glide__slide"><img src="asset/img/casa-habitacion-matrimonial.jpg"
+                                        alt="Casa"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="description text-center mt-3">
+                        <p class="room-price">$150.000</p>
+                        <p class="room-status">Casa de 100m2</p>
+                        <ul>
+                            <li>Vajilla Completa</li>
+                            <li>Microondas y pava eléctrica</li>
+                            <li>Calefacción Tiro Balanceado</li>
+                            <li>Cochera y Parrilla</li>
+                            <li>Cocina con horno</li>
+                            <li>Dos Habitaciones y Wifi</li>
+                        </ul>
+                        <a class="btn"
+                            href="https://api.whatsapp.com/send/?phone=5493544623216&text=Buenos%20días.%20Estamos%20interesados%20en%20la%20Casa%20">
+                            <span>Consultar</span>
+                            <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tercer Slider -->
+                <div class="col-md-4">
+                    <div class="glide" id="glide3">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="asset/img/suite3-afuera.jpg" alt="Suite 3"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-bano.jpg" alt="Suite 3"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-bano-2.jpg" alt="Suite 3"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-cama-chica.jpg" alt="Suite 3"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-cama-matrimonial.jpg" alt="Suite 3">
+                                </li>
+                                <li class="glide__slide"><img src="asset/img/suite3-cocina.jpg" alt="Suite 3"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-comedor.jpg" alt="Suite 3"></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="description text-center mt-3">
+                        <p class="room-price">$110.000</p>
+                        <p class="room-status">Suite 3 de 65m2</p>
+                        <ul>
+                            <li>Vajilla Completa</li>
+                            <li>Microondas y pava eléctrica</li>
+                            <li>Calefacción Tiro Balanceado</li>
+                            <li>Cochera y Parrilla</li>
+                            <li>Anafe eléctrico</li>
+                            <li>WiFi</li>
+                        </ul>
+                        <a class="btn"
+                            href="https://api.whatsapp.com/send/?phone=5493544623216&text=Buenos%20días.%20Estamos%20interesados%20en%20la%20suite%203">
+                            <span>Consultar</span>
+                            <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glide" id="glide4">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+
+                                <li class="glide__slide"><img src="asset/img/suite4-afuera.jpg" alt="Suite 4"></li>
+                                <li class="glide__slide"><img src="asset/img/suite4-balcon.jpg" alt="Suite 4"></li>
+                                <li class="glide__slide"><img src="asset/img/suite4-cama-matrimonial.jpg" alt="Suite 4">
+                                </li>
+                                <li class="glide__slide"><img src="asset/img/suite4-cocina.jpg" alt="Suite 4"></li>
+                                <li class="glide__slide"><img src="asset/img/suite4-comedor.jpg" alt="Suite 4"></li>
+                                <li class="glide__slide"><img src="asset/img/suite3-bano.jpg" alt="Suite 4"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="description text-center mt-3">
+                        <p class="room-price">$110.000</p>
+                        <p class="room-status">Suite 4 de 65m2 para 3 personas</p>
+                        <ul>
+                            <li>Vajilla Completa</li>
+                            <li>Microondas y pava eléctrica</li>
+                            <li>Calefacción Tiro Balanceado</li>
+                            <li>Cochera y Parrilla</li>
+                            <li>Cocina con Horno</li>
+                            <li>WiFi</li>
+                        </ul>
+                        <a class="btn"
+                            href="https://api.whatsapp.com/send/?phone=5493544623216&text=Buenos%20días.%20Estamos%20interesados%20en%20la%20suite%204">
+                            <span>Consultar</span>
+                            <img class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </section>
 
-    <section id="room-description">
-        <div class="description">
-            <img  src="asset/img2/Rectangle 390.png" alt="#">
-            <p class="room-price">#20,000</p>
-            <p class="room-status">Master Longue</p>
-            <ul>
-                <li>Air conditioner</li>
-                <li>Free internent</li>
-                <li>Outdoor Funiture</li>
-                <li>Room Services</li>
-            </ul>
-
-            <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
-            </a>
-            
-            
-        </div>
-
-
-        <div class="description">
-            <img class="images" src="asset/img2/Rectangle 389.png" alt="#">
-            <p class="room-price">#50,000</p>
-            <p class="room-status">Business Room</p>
-            <ul>
-                <li>Flat screen Tv</li>
-                <li>Cleaning services</li>
-                <li>Private bathroom</li>
-                <li>Cloth rack</li>
-            </ul>
-            <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
-            </a>
-        </div>
-
-        <div class="description">
-           <img class="images"src="asset/img2/olexandr-ignatov-w72a24brINI-unsplash.jpg" alt="#">
-            <p class="room-price">#32,000</p>
-            <p class="room-status">Master Longue</p>
-            <ul>
-                <li>Air conditioner</li>
-                <li>Streaming services</li>
-                <li>Outdoor Funiture</li>
-                <li>Room Services</li>
-            </ul>
-            <a class="btn" href="#">
-                <span >Book Now</span>
-                <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
-            </a>
-        </div>
-    </section>
-
-
-    <section id="room-description">
-      <div class="description">
-          <img src="asset/img2/mia-moessinger-_H5Y_MBq8Fg-unsplash.jpg" alt="#">
-          <p class="room-price">#20,000</p>
-          <p class="room-status">Master Longue</p>
-          <ul>
-              <li>Air conditioner</li>
-              <li>Free internent</li>
-              <li>Outdoor Funiture</li>
-              <li>Room Services</li>
-          </ul>
-
-          <a class="btn" href="#">
-              <span >Book Now</span>
-              <img  class="arrow" src="asset/img2/Icon ionic-ios-arrow-round-forward.svg" alt="#">
-          </a>
-      </div>
-    </section>
 
     <!-- FOOTER -->
-    
+
     <footer id="footer">
-      <div>
-          <img src="asset/img2/Hello.svg" alt="#">
-          <img  src="asset/img2/hotel majestic.svg" alt="#">
-      </div>
-      <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a  href="#">CONTACT</a></li>
-          <li><a href="#">COOKIES POLICY</a></li>
-          <li><a href="#">LEGAL TERM</a></li>
-      </ul>
+        <div>
+
+            <img src="asset/img/logo-latoscana.png" height="125" width="125px" alt="Logo">
+        </div>
+
     </footer>
 
     <footer id="footer2">
-      <div>
-          <p>MADE FOR EXCELLENCE</p>
-      </div>
-      <ul>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
-          <li><a href="#"><i class="fab fa-behance"></i></a></li>
-      </ul>
+        <div>
+            <p>SENTITE EN CASA</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/latoscanacysok/"><i class="fab fa-instagram"></i></a></li>
+
+        </ul>
     </footer>
 
-  <!-- Bootstrap Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Glide('#glide1', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 3000, // Cambia la imagen cada 3000ms (3 segundos)
+            }).mount();
+
+            new Glide('#glide2', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+
+            new Glide('#glide3', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+
+            new Glide('#glide4', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 3000,
+            }).mount();
+        });
+
+
+    </script>
 </body>
+
 </html>
