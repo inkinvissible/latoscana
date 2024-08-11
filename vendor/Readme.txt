@@ -1,1 +1,0 @@
-All files that were not created by you, for example the bootstrap files should be this in vendor directory
