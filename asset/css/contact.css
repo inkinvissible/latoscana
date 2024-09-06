@@ -1,3 +1,4 @@
+
 .form-control {
   background: var(--dark-color);
 }
@@ -30,4 +31,9 @@ p a:hover {
 #other-details .social-media a {
   margin-right: 1rem;
   color: #fff;
+}
+.buttonHoverReservations:hover{
+  color: #a22e53;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
